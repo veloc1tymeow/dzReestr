@@ -24,3 +24,4 @@ INSERT INTO pack_animals (name, type, commands, birth_date) VALUES
 ('Буцефал', 'Лошадь', 'Рысить', '2019-05-04'),
 ('Верблюд', 'Верблюд', 'Стоять', '2018-11-02'),
 ('Иа', 'Осел', 'Груз', '2020-08-17');
+DELETE FROM pack_animals WHERE type = 'Верблюд';
