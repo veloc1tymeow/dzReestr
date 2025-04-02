@@ -15,3 +15,12 @@ CREATE TABLE pack_animals (
     commands TEXT,
     birth_date DATE
 );
+INSERT INTO home_animals (name, type, commands, birth_date) VALUES
+('Барсик', 'Кошка', 'Сидеть, Лапу', '2021-06-15'),
+('Рекс', 'Собака', 'Фас, Голос', '2020-03-22'),
+('Гоша', 'Хомяк', 'Бегать', '2022-01-10');
+
+INSERT INTO pack_animals (name, type, commands, birth_date) VALUES
+('Буцефал', 'Лошадь', 'Рысить', '2019-05-04'),
+('Верблюд', 'Верблюд', 'Стоять', '2018-11-02'),
+('Иа', 'Осел', 'Груз', '2020-08-17');
