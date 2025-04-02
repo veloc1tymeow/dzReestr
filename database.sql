@@ -25,3 +25,5 @@ INSERT INTO pack_animals (name, type, commands, birth_date) VALUES
 ('Верблюд', 'Верблюд', 'Стоять', '2018-11-02'),
 ('Иа', 'Осел', 'Груз', '2020-08-17');
 DELETE FROM pack_animals WHERE type = 'Верблюд';
+CREATE TABLE horses_donkeys AS
+SELECT * FROM pack_animals WHERE type IN ('Лошадь', 'Осел');
