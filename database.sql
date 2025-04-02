@@ -34,3 +34,9 @@ CREATE TABLE young_animals AS
 SELECT *, TIMESTAMPDIFF(MONTH, birth_date, CURDATE()) AS age_in_months
 FROM home_animals
 WHERE TIMESTAMPDIFF(YEAR, birth_date, CURDATE()) BETWEEN 1 AND 3;
+CREATE TABLE all_animals AS
+SELECT *, 'home_animals' AS origin FROM home_animals
+UNION ALL
+SELECT *, 'horses_donkeys' AS origin FROM horses_donkeys
+UNION ALL
+SELECT *, 'young_animals' AS origin FROM young_animals;
