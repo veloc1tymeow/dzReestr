@@ -15,6 +15,7 @@ CREATE TABLE pack_animals (
     commands TEXT,
     birth_date DATE
 );
+
 INSERT INTO home_animals (name, type, commands, birth_date) VALUES
 ('Барсик', 'Кошка', 'Сидеть, Лапу', '2021-06-15'),
 ('Рекс', 'Собака', 'Фас, Голос', '2020-03-22'),
@@ -24,6 +25,12 @@ INSERT INTO pack_animals (name, type, commands, birth_date) VALUES
 ('Буцефал', 'Лошадь', 'Рысить', '2019-05-04'),
 ('Верблюд', 'Верблюд', 'Стоять', '2018-11-02'),
 ('Иа', 'Осел', 'Груз', '2020-08-17');
+
 DELETE FROM pack_animals WHERE type = 'Верблюд';
 CREATE TABLE horses_donkeys AS
 SELECT * FROM pack_animals WHERE type IN ('Лошадь', 'Осел');
+
+CREATE TABLE young_animals AS
+SELECT *, TIMESTAMPDIFF(MONTH, birth_date, CURDATE()) AS age_in_months
+FROM home_animals
+WHERE TIMESTAMPDIFF(YEAR, birth_date, CURDATE()) BETWEEN 1 AND 3;
