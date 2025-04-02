@@ -4,8 +4,9 @@ def connect_db():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="",
-        database="human_friends"
+        password="НовыйПароль",
+        database="human_friends",
+        port=3306
     )
 
 def add_animal(name, type_, commands, birth_date):
