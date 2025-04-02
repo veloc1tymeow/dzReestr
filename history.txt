@@ -1,0 +1,23 @@
+    1  dpkg -i man-db_2.9.4-2_amd64.deb
+    2  wget http://ftp.debian.org/debian/pool/main/n/nmap/nmap_7.80+dfsg1-2_amd64.deb
+    3  # dpkg -i man-db_2.9.4-2_amd64.deb
+    4  dpkg -i man-db_2.9.4-2_amd64.deb
+    5  sudo apt-get download nginx
+    6  sudo dpkg –i ./nginx_1.14.0-0ubuntu1.6_all.deb
+    7  dpkg -Dhelp
+    8  dpkg-deb --help
+    9  sudo dpkg –i ./nginx_1.14.0-0ubuntu1.6_all.deb
+   10  dpkg –i ./nginx_1.14.0-0ubuntu1.6_all.deb
+   11  dpkg –install ./nginx_1.14.0-0ubuntu1.6_all.deb
+   12  sudo apt-get install -f
+   13  dpkg –install ./nginx_1.14.0-0ubuntu1.6_all.deb
+   14  sudo apt-get dist-upgrade
+   15  dpkg –install ./nginx_1.14.0-0ubuntu1.6_all.deb
+   16  wget http://ftp.debian.org/debian/pool/main/n/nmap/nmap_7.80+dfsg1-2_amd64.deb
+   17  wget http://ftp.debian.org/debian/pool/main/n/nmap/ncat_7.70+dfsg1-6+deb10u2_amd64.deb
+   18  sudo dpkg -i ncat_7.70+dfsg1-6+deb10u2_amd64.deb
+   19  sudo apt install liblua
+   20  sudo apt install ncat
+   21  sudo dpkg -i ncat_7.70+dfsg1-6+deb10u2_amd64.deb
+   22  sudo apt update
+   23  history > history.txt
