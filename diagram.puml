@@ -1,0 +1,21 @@
+@startuml
+class Animal {
+    +name
+    +birth_date
+    +commands
+    +train()
+}
+class HomeAnimal {}
+class PackAnimal {}
+
+Animal <|-- HomeAnimal
+Animal <|-- PackAnimal
+
+HomeAnimal <|-- "Собаки"
+HomeAnimal <|-- "Кошки"
+HomeAnimal <|-- "Хомяки"
+
+PackAnimal <|-- "Лошади"
+PackAnimal <|-- "Ослы"
+PackAnimal <|-- "Верблюды"
+@enduml
